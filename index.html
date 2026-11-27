@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify - Online Learning Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="brand">Learnify</a>
+
+            <form class="search-bar">
+                <input type="search" placeholder="Search courses, topics...">
+                <button type="submit">&#128269;</button>
+            </form>
+
+            <nav>
+                <ul class="nav-actions">
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#contact" class="btn btn-outline">Login</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Unlock Your Potential with Online Learning</h1>
+                <p>Join thousands of learners and access top-rated courses from expert instructors. Learn anytime, anywhere.</p>
+                <form class="hero-search">
+                    <input type="text" placeholder="What do you want to learn?" required>
+                    <button type="submit" class="btn btn-primary">Find Courses</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Categories Grid -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title center">Popular Categories</h2>
+                <div class="category-grid">
+                    <article class="cat-card">
+                        <span class="cat-icon">&#128187;</span>
+                        <h3>Development</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#127912;</span>
+                        <h3>Design</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#128200;</span>
+                        <h3>Business</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#128483;</span>
+                        <h3>Languages</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#128218;</span>
+                        <h3>Academics</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#127925;</span>
+                        <h3>Music</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#129496;</span>
+                        <h3>Lifestyle</h3>
+                    </article>
+                    <article class="cat-card">
+                        <span class="cat-icon">&#129514;</span>
+                        <h3>Science</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Courses & Filter Bar -->
+        <section id="courses" class="section bg-light">
+            <div class="container">
+                <div class="section-header-flex">
+                    <h2 class="section-title">Featured Courses</h2>
+                    <aside class="filters">
+                        <label for="level-filter">Level:
+                            <select id="level-filter">
+                                <option>All</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                            </select>
+                        </label>
+                        <label for="price-filter">Price:
+                            <select id="price-filter">
+                                <option>All</option>
+                                <option>Free</option>
+                                <option>Paid</option>
+                            </select>
+                        </label>
+                        <label>
+                            <input type="checkbox"> Certificate
+                        </label>
+                    </aside>
+                </div>
+
+                <div class="course-grid">
+                    <article class="course-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web development laptop setup">
+                        <div class="course-body">
+                            <h3>Modern Web Development Bootcamp</h3>
+                            <p class="instructor">By Sarah Jenkins</p>
+                            <div class="course-meta">
+                                <span>&#9733; 4.8 (1.2k)</span>
+                                <strong>$49.99</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Graphic design color palette">
+                        <div class="course-body">
+                            <h3>Graphic Design Masterclass</h3>
+                            <p class="instructor">By David Miller</p>
+                            <div class="course-meta">
+                                <span>&#9733; 4.5 (890)</span>
+                                <strong>$39.99</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Business analytics dashboard">
+                        <div class="course-body">
+                            <h3>Business Analytics Fundamentals</h3>
+                            <p class="instructor">By Priya Nair</p>
+                            <div class="course-meta">
+                                <span>&#9733; 4.7 (640)</span>
+                                <strong>$44.99</strong>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section id="pricing" class="section">
+            <div class="container">
+                <h2 class="section-title center">Flexible Learning Plans</h2>
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <h3>Starter</h3>
+                        <p class="price">$0<span>/month</span></p>
+                        <ul>
+                            <li>Access to 20+ free courses</li>
+                            <li>Community forum support</li>
+                            <li>Mobile app access</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline full-width">Get Started</a>
+                    </article>
+
+                    <article class="price-card featured">
+                        <h3>Pro Learner</h3>
+                        <p class="price">$19<span>/month</span></p>
+                        <ul>
+                            <li>Unlimited access to all courses</li>
+                            <li>Verified completion certificates</li>
+                            <li>Offline downloads &amp; projects</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary full-width">Start Free Trial</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title center">What Our Students Say</h2>
+                <div class="testimonial-grid">
+                    <article class="review-card">
+                        <p>"The web development bootcamp helped me build my first real portfolio from scratch."</p>
+                        <h4>- Aarav Sharma</h4>
+                    </article>
+                    <article class="review-card">
+                        <p>"Clear explanations, flexible pacing, and practical assignments that actually make sense."</p>
+                        <h4>- Neha Verma</h4>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title center">Need Guidance? Contact Us</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Course Interest</label>
+                        <input type="text" id="interest" placeholder="e.g., Web Development, Cyber Security" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Message</label>
+                        <textarea id="query" rows="4" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 Learnify. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
